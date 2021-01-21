@@ -2,6 +2,9 @@ package HomeWork.day1_19;
 
 import java.util.Date;
 
+/**
+ * 对比一下，一个对象中多个属性通过Setter方法赋值和通过构造器赋值的速度，并阐述原因。
+ */
 public class test1 {
     public static void main(String[] args) {
         while (true){
