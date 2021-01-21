@@ -9,6 +9,11 @@ public class test3 {
         File file=new File("aaa.txt");
         OutputStream out=null;
         BufferedOutputStream bos=null;
-
+        for(int i=1;i<10;i++){
+            for(int j=1;j<=i;j++) {
+                System.out.print(i+"*"+j+"="+i*j+" ");
+            }
+            System.out.println();
+        }
     }
 }
