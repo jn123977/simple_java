@@ -11,6 +11,7 @@ public class test3 {
         try {
             FileWriter fw=new FileWriter(file);
             BufferedWriter bw=new BufferedWriter(fw);
+            //输出语句
             for(Integer i=1;i<10;i++){
                 String str="";
                 for(Integer j=1;j<=i;j++) {
@@ -21,12 +22,11 @@ public class test3 {
                 System.out.println(str);
                 bw.newLine();
             }
+
             bw.close();
             fw.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
