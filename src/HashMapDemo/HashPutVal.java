@@ -2,7 +2,7 @@ package HashMapDemo;
 
 import java.util.HashMap;
 
-public class test {
+public class HashPutVal {
     public static void main(String[] args) {
         HashMap<String,String>  hashMap=new HashMap<>();
         System.out.println(1&1);
