@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 1、修改socket中的server和client,使得server能够向client发送数据。
@@ -15,9 +16,12 @@ public class server {
         int port = 55533;
         ServerSocket server = new ServerSocket(port);
 
+        String message="Hi!";
         //server讲一直等待连接的到来
         System.out.println("server将一直等待链接的到来");
         Socket socket = server.accept();
+
+        socket.getOutputStream().write(message.getBytes(StandardCharsets.UTF_8));
         //建立链接后，从socket中获取输入流，并建立缓冲区进行读取
         InputStream inputStream = socket.getInputStream();
         byte[] bytes = new byte[1024];
